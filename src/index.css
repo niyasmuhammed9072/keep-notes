@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: poppins, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.paginationBttns {
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.paginationBttns a {
+  padding: 2px 12px ;
+  border-radius: 3px;
+  border: 1px solid rgb(229 231 235);
+  color: black;
+  cursor: pointer;
+}
+
+.paginationBttns a:hover {
+  color: black;
+  background-color: rgb(196, 196, 196);
+}
+
+.paginationActive a {
+  color: black;
+  background-color: rgb(229 231 235);
+}
+
+.paginationDisabled a {
+  display: none;
+}
